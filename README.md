@@ -15,3 +15,5 @@
 - Prettier - configured
   - sort imports
   - tailwind plugin
+
+> Will update on major updates of Nextjs
