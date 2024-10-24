@@ -1,5 +1,8 @@
 import Link from "next/link";
 
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
+
+import { Button } from "./ui/button";
 import ThemeSwitch from "./ui/theme-switch";
 
 export const Header = () => {
@@ -18,7 +21,11 @@ export const Header = () => {
 export const Footer = () => {
   return (
     <footer className="p-4 text-center text-muted-foreground">
-      Next.js {new Date().getFullYear()}
+      <Button asChild variant={"link"}>
+        <Link href="https://github.com/impeterk/next-starter">
+          <GitHubLogoIcon className="mr-2" /> Github repository
+        </Link>
+      </Button>
     </footer>
   );
 };

@@ -1,9 +1,9 @@
+import { FlatCompat } from "@eslint/eslintrc";
+import js from "@eslint/js";
 import checkFile from "eslint-plugin-check-file";
 import n from "eslint-plugin-n";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import js from "@eslint/js";
-import { FlatCompat } from "@eslint/eslintrc";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -25,14 +25,14 @@ export default [
             "prefer-arrow-callback": ["error"],
             "prefer-template": ["error"],
             semi: ["error"],
-            quotes: ["error", "single"],
+            quotes: ["error", "double"],
             "n/no-process-env": ["error"],
 
             "check-file/filename-naming-convention": ["error", {
                 "**/*.{ts,tsx}": "KEBAB_CASE",
             }, {
-                ignoreMiddleExtensions: true,
-            }],
+                    ignoreMiddleExtensions: true,
+                }],
 
             "check-file/folder-naming-convention": ["error", {
                 "src/**/!^[.*": "KEBAB_CASE",

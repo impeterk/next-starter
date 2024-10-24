@@ -1,6 +1,6 @@
 # Next js - starter
 
-## :exclamation: Next.js 15 - Release candidate
+## Next.js 15 - Stable release
 
 - Tailwind CSS
   - Shad CN ui
@@ -15,5 +15,3 @@
 - Prettier - configured
   - sort imports
   - tailwind plugin
-
-> Will update on major updates of Nextjs

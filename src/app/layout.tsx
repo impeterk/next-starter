@@ -1,23 +1,23 @@
-import type { Metadata } from 'next';
-import localFont from 'next/font/local';
+import type { Metadata } from "next";
+import localFont from "next/font/local";
 
-import { Footer, Header } from '@/components/layout';
-import Providers from '@/components/providers';
+import { Footer, Header } from "@/components/layout";
+import Providers from "@/components/providers";
 
-import './globals.css';
+import "./globals.css";
 
 const geistSans = localFont({
-  src: './fonts/GeistVF.woff',
-  variable: '--font-geist-sans',
+  src: "./fonts/GeistVF.woff",
+  variable: "--font-geist-sans",
 });
 const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
-  variable: '--font-geist-mono',
+  src: "./fonts/GeistMonoVF.woff",
+  variable: "--font-geist-mono",
 });
 
 export const metadata: Metadata = {
-  title: 'Nextjs starter - basic | Peterk.dev',
-  description: 'Basic starter kit for next.js',
+  title: "Nextjs starter - basic | Peterk.dev",
+  description: "Basic starter kit for next.js",
 };
 
 export default function RootLayout({

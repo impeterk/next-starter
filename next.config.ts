@@ -1,7 +1,7 @@
 const nextConfig = {
   experimental: {
     // typedRoutes: true, //not supported by turbopack yet :-(
-    reactCompiler: true,
+    // reactCompiler: true,
   },
 };
 
