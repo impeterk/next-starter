@@ -1,4 +1,4 @@
-import { ExclamationTriangleIcon } from "@radix-ui/react-icons";
+import { ExclamationTriangleIcon } from '@radix-ui/react-icons';
 
 import {
   Card,
@@ -6,17 +6,19 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from '@/components/ui/card';
 
 export default function Home() {
   return (
     <section className="container mx-auto pt-8">
       <Card className="mx-auto max-w-md">
         <CardHeader>
-          <CardTitle className="text-xl">Get started</CardTitle>
+          <CardTitle className="text-xl">
+            Next.js 15 Basic Starter Kit
+          </CardTitle>
         </CardHeader>
         <CardContent>
-          <article className="prose">
+          <article className="prose dark:prose-invert">
             <ul>
               <li>Tailwind CSS</li>
               <li>Zod</li>
@@ -30,8 +32,9 @@ export default function Home() {
           </article>
         </CardContent>
         <CardFooter>
-          <ExclamationTriangleIcon className="mr-2 text-destructive" /> Next 15
-          RC - React 19 RC
+          <ExclamationTriangleIcon className="text-warning mr-2" /> Experimental
+          React Compiler{' '}
+          <strong className="ml-1 text-destructive">enabled</strong>
         </CardFooter>
       </Card>
     </section>
