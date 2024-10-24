@@ -10,7 +10,7 @@ export const Header = () => {
     <header className="border-b bg-background text-foreground">
       <div className="container mx-auto flex h-16 items-center justify-between">
         <Link href="/" className="text-xl">
-          Next starter
+          Peterk.dev Next starter
         </Link>
         <ThemeSwitch />
       </div>
