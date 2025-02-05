@@ -1,3 +1,4 @@
+import CopyButton from "@/components/copy-button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function Home() {
@@ -22,6 +23,14 @@ export default function Home() {
               <li>Eslint</li>
             </ul>
           </article>
+        </CardContent>
+      </Card>
+      <Card className="container mx-auto mt-12 max-w-lg">
+        <CardContent className="relative flex flex-col py-8 text-center">
+          <CopyButton text="npx degit https://github.com/impeterk/next-starter" />
+          <code className="relative rounded-lg bg-muted/50 px-4 pb-4 pt-8 font-mono text-sm font-semibold">
+            npx degit https://github.com/impeterk/next-starter
+          </code>
         </CardContent>
       </Card>
     </section>
