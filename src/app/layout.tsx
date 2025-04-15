@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 
 import { Footer, Header } from "@/components/layout";
-import Providers from "@/components/providers";
+import Providers from "@/providers";
 
 import "./globals.css";
 
